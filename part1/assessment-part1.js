@@ -150,15 +150,7 @@ String.prototype.grammarPolice = function() {
 
 // CODE HERE...
 
-function valueType(arg1, arg2) {
-  if (arg1 === arg2) {
-    return "Exactly the same";
-  } else if (arg1 == arg2) {
-    return "Same value, different types";
-  } else {
-    return "Different values";
-  }
-}
+const valueType = (arg1, arg2) => arg1 === arg2 ? "Exactly the same" : arg1 == arg2 ? "Same value, different types" : "Different values";
 
 // *************
 // * PROBLEM 5 *
